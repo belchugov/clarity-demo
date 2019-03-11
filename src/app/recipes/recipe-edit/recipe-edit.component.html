@@ -1,8 +1,8 @@
-<div class="row">
-  <div class="col-xs-12">
+<div class="clr-row">
+  <div class="clr-col-xs-12">
     <form [formGroup]="recipeForm" (ngSubmit)="onSubmit()">
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="clr-row">
+        <div class="clr-col-xs-12">
           <button
             type="submit"
             class="btn btn-success"
@@ -10,8 +10,8 @@
           <button type="button" class="btn btn-danger" (click)="onCancel()">Cancel</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="clr-row">
+        <div class="clr-col-xs-12">
           <div class="form-group">
             <label for="name">Name</label>
             <input
@@ -22,8 +22,8 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="clr-row">
+        <div class="clr-col-xs-12">
           <div class="form-group">
             <label for="imagePath">Image URL</label>
             <input
@@ -35,13 +35,13 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="clr-row">
+        <div class="clr-col-xs-12">
           <img [src]="imagePath.value" class="img-responsive">
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="clr-row">
+        <div class="clr-col-xs-12">
           <div class="form-group">
             <label for="description">Description</label>
             <textarea
@@ -53,26 +53,26 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-12" formArrayName="ingredients">
+      <div class="clr-row">
+        <div class="clr-col-xs-12" formArrayName="ingredients">
           <div
-            class="row"
+            class="clr-row"
             *ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"
             [formGroupName]="i"
             style="margin-top: 10px;">
-            <div class="col-xs-8">
+            <div class="clr-col-xs-8">
               <input
                 type="text"
                 class="form-control"
                 formControlName="name">
             </div>
-            <div class="col-xs-2">
+            <div class="clr-col-xs-2">
               <input
                 type="number"
                 class="form-control"
                 formControlName="amount">
             </div>
-            <div class="col-xs-2">
+            <div class="clr-col-xs-2">
               <button
                 type="button"
                 class="btn btn-danger"
@@ -80,8 +80,8 @@
             </div>
           </div>
           <hr>
-          <div class="row">
-            <div class="col-xs-12">
+          <div class="clr-row">
+            <div class="clr-col-xs-12">
               <button
                 type="button"
                 class="btn btn-success"

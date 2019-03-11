@@ -1,8 +1,13 @@
-<app-header (featureSelected)="onNavigate($event)"></app-header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <router-outlet></router-outlet>
+<div class="main-container">
+  <app-header></app-header>
+  <div class="content-container">
+    <div class="content-area">
+      <div class="clr-row">
+        <div class="clr-col-md-12">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
     </div>
+    <nav class="sidenav"></nav>
   </div>
 </div>
