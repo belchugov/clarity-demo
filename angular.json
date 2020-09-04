@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/clarity-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -30,8 +31,7 @@
             "scripts": [
               "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
               "node_modules/@clr/icons/clr-icons.min.js"
-            ],
-            "es5BrowserSupport": true
+            ]
           },
           "configurations": {
             "production": {
@@ -55,6 +55,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
