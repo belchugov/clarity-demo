@@ -42,32 +42,33 @@
   </clr-textarea-container>
 
   <div formArrayName="ingredients">
-    <div
-      class=""
-      *ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"
-      [formGroupName]="i"
-      style="margin-top: 10px;">
-      <clr-input-container>
-        <label>Name</label>
-        <input
-            type="text"
-            class="form-control"
-            formControlName="name"
-            clrInput>
-      </clr-input-container>
-      <clr-input-container>
-        <label>Amount</label>
-        <input
-            type="number"
-            class="form-control"
-            formControlName="amount"
-            clrInput>
-      </clr-input-container>
-      <button
-          type="button"
-          class="btn btn-danger"
-          (click)="onDeleteIngredient(i)">X</button>
-    </div>
+    <pre>{{ recipeForm | json }}</pre>
+<!--    <div-->
+<!--      class=""-->
+<!--      *ngFor="let ingredientCtrl of recipeForm.get('ingredients').controls; let i = index"-->
+<!--      [formGroupName]="i"-->
+<!--      style="margin-top: 10px;">-->
+<!--      <clr-input-container>-->
+<!--        <label>Name</label>-->
+<!--        <input-->
+<!--            type="text"-->
+<!--            class="form-control"-->
+<!--            formControlName="name"-->
+<!--            clrInput>-->
+<!--      </clr-input-container>-->
+<!--      <clr-input-container>-->
+<!--        <label>Amount</label>-->
+<!--        <input-->
+<!--            type="number"-->
+<!--            class="form-control"-->
+<!--            formControlName="amount"-->
+<!--            clrInput>-->
+<!--      </clr-input-container>-->
+<!--      <button-->
+<!--          type="button"-->
+<!--          class="btn btn-danger"-->
+<!--          (click)="onDeleteIngredient(i)">X</button>-->
+<!--    </div>-->
     <button
         type="button"
         class="btn btn-success"
