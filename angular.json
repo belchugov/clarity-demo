@@ -141,5 +141,8 @@
       }
     }
   },
-  "defaultProject": "clarity-demo"
+  "defaultProject": "clarity-demo",
+  "cli": {
+    "analytics": "9de59226-658c-4a88-87e7-608c9fbaf50a"
+  }
 }
