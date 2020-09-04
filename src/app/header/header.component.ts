@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HttpResponse } from '@angular/common/http';
 
 import { DataStorageService } from '../shared/data-storage.service';
-import {Recipe} from "../recipes/recipe.model";
+import { Recipe } from '../recipes/recipe.model';
 
 @Component({
   selector: 'app-header',
